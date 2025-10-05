@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header and Hero Section */
+.header-hero {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 20px 15%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    transition: opacity 0.3s;
+}
+
+.logo img:hover {
+    opacity: 0.8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: #E5E7EB;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3882F6;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: #6d747d; /* Fallback color if image doesn't load */
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(31, 41, 55, 0.7), rgba(56, 130, 246, 0.5));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image-text {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.hero-image-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero-image-text p {
+    font-size: 16px;
+    color: #E5E7EB;
+    margin: 0;
+}
+
+button {
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2a68d4;
+}
+
+button {
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2a68d4;
+}
+
+/* Information Section */
+.information {
+    padding: 80px 15%;
+    text-align: center;
+}
+
+.information h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+}
+
+.card-image {
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card-image img:hover {
+    transform: scale(1.05);
+}
+
+.card p {
+    color: #4b5563;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Quote Section */
+.quote {
+    background-color: #E5E7EB;
+    padding: 100px 25%;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Call to Action */
+.cta {
+    padding: 100px 15%;
+}
+
+.cta-container {
+    background-color: #3882F6;
+    border-radius: 10px;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.cta-text h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.cta-text p {
+    color: #E5E7EB;
+}
+
+.cta-button {
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: #3882F6;
+}
+
+/* Footer */
+footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+}
+
+/* Music icons in cards */
+.music-icon {
+    font-size: 60px;
+    color: #3882F6;
+}

@@ -1,1 +1,1 @@
-# personal-webpage
+# the personal-webpage is my first ever personal project from the odin project foundations with personal  research on other css tags
